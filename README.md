@@ -4,12 +4,8 @@
 
 | Command | Who can use | Description |
 |---|---|---|
-| `/messagelimit set <user> <amount>` | Moderators | Set a daily message limit. User is timed out 24 h when reached. |
-| `/messagelimit modify <user> <amount>` | Moderators | Change an existing limit. |
-| `/messagelimit remove <user>` | Moderators | Remove a user's limit. |
-| `/curfew set <user> <time>` | Moderators | Set a nightly curfew (HH:MM, AEST/AEDT). User is timed out until 9:00 AM. |
-| `/curfew modify <user> <time>` | Moderators | Change an existing curfew. |
-| `/curfew remove <user>` | Moderators | Remove a user's curfew. |
+| `/messagelimit [set/remove/modify] [user] [amount]` | Moderators | Manage a user's daily message limit. On limit reached: 24 h timeout. Counts reset at midnight AEST/AEDT. |
+| `/curfew [set/remove/modify] [user] [time]` | Moderators | Manage a user's nightly curfew (HH:MM, AEST/AEDT). Timed out at curfew time until 9:00 AM. |
 | `/ping` | Everyone | Show bot latency and uptime. |
 | `/help` | Everyone | List all commands. |
 
